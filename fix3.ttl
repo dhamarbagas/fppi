@@ -1,0 +1,1030 @@
+	
+	@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+	@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+	@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+	@prefix Ban: <http://Bandara3.com/> .
+
+	Ban:Pesawat2013 a rdf:class .
+	Ban:Provinsi a rdf:class .
+	Ban:JenisKedatangan a rdf:class .
+
+	Ban:MemilikiBandara a rdf:Property .
+	Ban:MemilikiBandara rdfs:domain Ban:Provinsi .
+	Ban:MemilikiBandara rdfs:range Ban:Bandara .
+
+	Ban:jenis a rdf:Property .
+	Ban:jenis rdfs:domain Ban:JenisKedatangan .
+	Ban:jenis rdfs:range xsd:integer .
+
+	Ban:PenumpangDatang a rdf:Property .
+	Ban:PenumpangDatang rdfs:domain Ban:jenis .
+	Ban:PenumpangDatang rdfs:range xsd:integer .
+
+	Ban:PenumpangBerangkat a rdf:Property .
+	Ban:PenumpangBerangkat rdfs:domain Ban:jenis .
+	Ban:PenumpangBerangkat rdfs:range xsd:integer .
+
+	Ban:PesawatDatang a rdf:Property .
+	Ban:PesawatDatang rdfs:domain Ban:jenis .
+	Ban:PesawatDatang rdfs:range xsd:integer .
+
+	Ban:PesawatBerangkat a rdf:Property .
+	Ban:PesawatBerangkat rdfs:domain Ban:jenis .
+	Ban:PesawatBerangkat rdfs:range xsd:integer .
+
+	
+
+	Ban:ProvinsiAceh a Ban:Provinsi .
+	Ban:ProvinsiAceh rdfs:label "Aceh" .
+
+		
+
+	Ban:ProvinsiBali a Ban:Provinsi .
+	Ban:ProvinsiBali rdfs:label "Bali" .
+
+		
+
+	Ban:ProvinsiJakarta a Ban:Provinsi .
+	Ban:ProvinsiJakarta rdfs:label "Jakarta" .
+
+		
+
+	Ban:ProvinsiJambi a Ban:Provinsi .
+	Ban:ProvinsiJambi rdfs:label "Jambi" .
+
+		
+
+	Ban:ProvinsiJawaBarat a Ban:Provinsi .
+	Ban:ProvinsiJawaBarat rdfs:label "Jawa Barat" .
+
+		
+
+	Ban:ProvinsiJawaTengah a Ban:Provinsi .
+	Ban:ProvinsiJawaTengah rdfs:label "Jawa Tengah" .
+
+		
+
+	Ban:ProvinsiJawaTimur a Ban:Provinsi .
+	Ban:ProvinsiJawaTimur rdfs:label "Jawa Timur" .
+
+		
+
+	Ban:ProvinsiKalimantanBarat a Ban:Provinsi .
+	Ban:ProvinsiKalimantanBarat rdfs:label "Kalimantan Barat" .
+
+		
+
+	Ban:ProvinsiKalimantanSelatan a Ban:Provinsi .
+	Ban:ProvinsiKalimantanSelatan rdfs:label "Kalimantan Selatan" .
+
+		
+
+	Ban:ProvinsiKalimantanTengah a Ban:Provinsi .
+	Ban:ProvinsiKalimantanTengah rdfs:label "Kalimantan Tengah" .
+
+		
+
+	Ban:ProvinsiKalimantanTimur a Ban:Provinsi .
+	Ban:ProvinsiKalimantanTimur rdfs:label "Kalimantan Timur" .
+
+		
+
+	Ban:ProvinsiKalimantanUtara a Ban:Provinsi .
+	Ban:ProvinsiKalimantanUtara rdfs:label "Kalimantan Utara" .
+
+		
+
+	Ban:ProvinsiKepulauanBangkaBelitung a Ban:Provinsi .
+	Ban:ProvinsiKepulauanBangkaBelitung rdfs:label "Kepulauan Bangka Belitung" .
+
+		
+
+	Ban:ProvinsiLampung a Ban:Provinsi .
+	Ban:ProvinsiLampung rdfs:label "Lampung" .
+
+		
+
+	Ban:ProvinsiMaluku a Ban:Provinsi .
+	Ban:ProvinsiMaluku rdfs:label "Maluku" .
+
+		
+
+	Ban:ProvinsiMalukuUtara a Ban:Provinsi .
+	Ban:ProvinsiMalukuUtara rdfs:label "Maluku Utara" .
+
+		
+
+	Ban:ProvinsiNusaTenggaraBarat a Ban:Provinsi .
+	Ban:ProvinsiNusaTenggaraBarat rdfs:label "Nusa Tenggara Barat" .
+
+		
+
+	Ban:ProvinsiNusaTenggaraTimur a Ban:Provinsi .
+	Ban:ProvinsiNusaTenggaraTimur rdfs:label "Nusa Tenggara Timur" .
+
+		
+
+	Ban:ProvinsiPapua a Ban:Provinsi .
+	Ban:ProvinsiPapua rdfs:label "Papua" .
+
+		
+
+	Ban:ProvinsiPapuaBarat a Ban:Provinsi .
+	Ban:ProvinsiPapuaBarat rdfs:label "Papua Barat" .
+
+		
+
+	Ban:ProvinsiRiau a Ban:Provinsi .
+	Ban:ProvinsiRiau rdfs:label "Riau" .
+
+		
+
+	Ban:ProvinsiSulawesiSelatan a Ban:Provinsi .
+	Ban:ProvinsiSulawesiSelatan rdfs:label "Sulawesi Selatan" .
+
+		
+
+	Ban:ProvinsiSulawesiTengah a Ban:Provinsi .
+	Ban:ProvinsiSulawesiTengah rdfs:label "Sulawesi Tengah" .
+
+		
+
+	Ban:ProvinsiSulawesiTengah a Ban:Provinsi .
+	Ban:ProvinsiSulawesiTengah rdfs:label "Sulawesi Tengah" .
+
+		
+
+	Ban:ProvinsiSulawesiUtara a Ban:Provinsi .
+	Ban:ProvinsiSulawesiUtara rdfs:label "Sulawesi Utara" .
+
+		
+
+	Ban:ProvinsiSumateraBarat a Ban:Provinsi .
+	Ban:ProvinsiSumateraBarat rdfs:label "Sumatera Barat" .
+
+		
+
+	Ban:ProvinsiSumateraSelatan a Ban:Provinsi .
+	Ban:ProvinsiSumateraSelatan rdfs:label "Sumatera Selatan" .
+
+		
+
+	Ban:ProvinsiSumateraUtara a Ban:Provinsi .
+	Ban:ProvinsiSumateraUtara rdfs:label "Sumatera Utara" .
+
+		
+
+	Ban:ProvinsiYogyakarta a Ban:Provinsi .
+	Ban:ProvinsiYogyakarta rdfs:label "Yogyakarta" .
+
+		
+	Ban:Polonia a Ban:Bandara .
+	Ban:Polonia rdfs:label "Polonia" .
+	Ban:ProvinsiSumateraUtara Ban:MemilikiBandara Ban:Polonia .
+		
+	Ban:Polonia Ban:jenis Ban:Polonia_2012 .
+	Ban:Polonia_2012 Ban:PesawatBerangkat 20094  .
+	Ban:Polonia_2012 Ban:PenumpangBerangkat 2337589  .
+			
+	Ban:Polonia a Ban:Bandara .
+	Ban:Polonia rdfs:label "Polonia" .
+	Ban:ProvinsiSumateraUtara Ban:MemilikiBandara Ban:Polonia .
+		
+	Ban:Polonia Ban:jenis Ban:Polonia_2012 .
+	Ban:Polonia_2012 Ban:PesawatDatang 20187  .
+	Ban:Polonia_2012 Ban:PenumpangDatang 2427241  .
+
+		
+	Ban:AirportSINGKILHAMZAHFANSURI a Ban:Bandara .
+	Ban:AirportSINGKILHAMZAHFANSURI rdfs:label "Airport SINGKIL/ HAMZAH FANSURI" .
+	Ban:ProvinsiAceh Ban:MemilikiBandara Ban:AirportSINGKILHAMZAHFANSURI .
+		
+	Ban:AirportSINGKILHAMZAHFANSURI Ban:jenis Ban:AirportSINGKILHAMZAHFANSURI_2012 .
+	Ban:AirportSINGKILHAMZAHFANSURI_2012 Ban:PesawatBerangkat 6  .
+	Ban:AirportSINGKILHAMZAHFANSURI_2012 Ban:PenumpangBerangkat 33  .
+			
+	Ban:AirportSINGKILHAMZAHFANSURI a Ban:Bandara .
+	Ban:AirportSINGKILHAMZAHFANSURI rdfs:label "Airport SINGKIL/ HAMZAH FANSURI" .
+	Ban:ProvinsiAceh Ban:MemilikiBandara Ban:AirportSINGKILHAMZAHFANSURI .
+		
+	Ban:AirportSINGKILHAMZAHFANSURI Ban:jenis Ban:AirportSINGKILHAMZAHFANSURI_2012 .
+	Ban:AirportSINGKILHAMZAHFANSURI_2012 Ban:PesawatDatang 6  .
+	Ban:AirportSINGKILHAMZAHFANSURI_2012 Ban:PenumpangDatang 47  .
+
+		
+	Ban:Silangit a Ban:Bandara .
+	Ban:Silangit rdfs:label "Silangit" .
+	Ban:ProvinsiSumateraUtara Ban:MemilikiBandara Ban:Silangit .
+		
+	Ban:Silangit Ban:jenis Ban:Silangit_2012 .
+	Ban:Silangit_2012 Ban:PesawatBerangkat 641  .
+	Ban:Silangit_2012 Ban:PenumpangBerangkat 11658  .
+			
+	Ban:Silangit a Ban:Bandara .
+	Ban:Silangit rdfs:label "Silangit" .
+	Ban:ProvinsiSumateraUtara Ban:MemilikiBandara Ban:Silangit .
+		
+	Ban:Silangit Ban:jenis Ban:Silangit_2012 .
+	Ban:Silangit_2012 Ban:PesawatDatang 641  .
+	Ban:Silangit_2012 Ban:PenumpangDatang 12347  .
+
+		
+	Ban:Lasondre a Ban:Bandara .
+	Ban:Lasondre rdfs:label "Lasondre" .
+	Ban:ProvinsiSumateraUtara Ban:MemilikiBandara Ban:Lasondre .
+		
+	Ban:Lasondre Ban:jenis Ban:Lasondre_2012 .
+	Ban:Lasondre_2012 Ban:PesawatBerangkat 397  .
+	Ban:Lasondre_2012 Ban:PenumpangBerangkat 2907  .
+			
+	Ban:Lasondre a Ban:Bandara .
+	Ban:Lasondre rdfs:label "Lasondre" .
+	Ban:ProvinsiSumateraUtara Ban:MemilikiBandara Ban:Lasondre .
+		
+	Ban:Lasondre Ban:jenis Ban:Lasondre_2012 .
+	Ban:Lasondre_2012 Ban:PesawatDatang 397  .
+	Ban:Lasondre_2012 Ban:PenumpangDatang 3157  .
+
+		
+	Ban:sultansyarifkasimII a Ban:Bandara .
+	Ban:sultansyarifkasimII rdfs:label "sultan syarif kasim II" .
+	Ban:ProvinsiRiau Ban:MemilikiBandara Ban:sultansyarifkasimII .
+		
+	Ban:sultansyarifkasimII Ban:jenis Ban:sultansyarifkasimII_2012 .
+	Ban:sultansyarifkasimII_2012 Ban:PesawatBerangkat 15576  .
+	Ban:sultansyarifkasimII_2012 Ban:PenumpangBerangkat 1677865  .
+			
+	Ban:sultansyarifkasimII a Ban:Bandara .
+	Ban:sultansyarifkasimII rdfs:label "sultan syarif kasim II" .
+	Ban:ProvinsiRiau Ban:MemilikiBandara Ban:sultansyarifkasimII .
+		
+	Ban:sultansyarifkasimII Ban:jenis Ban:sultansyarifkasimII_2012 .
+	Ban:sultansyarifkasimII_2012 Ban:PesawatDatang 15501  .
+	Ban:sultansyarifkasimII_2012 Ban:PenumpangDatang 1717283  .
+
+		
+	Ban:minangkabau a Ban:Bandara .
+	Ban:minangkabau rdfs:label "minangkabau" .
+	Ban:ProvinsiSumateraBarat Ban:MemilikiBandara Ban:minangkabau .
+		
+	Ban:minangkabau Ban:jenis Ban:minangkabau_2012 .
+	Ban:minangkabau_2012 Ban:PesawatBerangkat 458  .
+	Ban:minangkabau_2012 Ban:PenumpangBerangkat 658105  .
+			
+	Ban:minangkabau a Ban:Bandara .
+	Ban:minangkabau rdfs:label "minangkabau" .
+	Ban:ProvinsiSumateraBarat Ban:MemilikiBandara Ban:minangkabau .
+		
+	Ban:minangkabau Ban:jenis Ban:minangkabau_2012 .
+	Ban:minangkabau_2012 Ban:PesawatDatang 4649  .
+	Ban:minangkabau_2012 Ban:PenumpangDatang 67466  .
+
+		
+	Ban:sultanmahmudbadaruddinII a Ban:Bandara .
+	Ban:sultanmahmudbadaruddinII rdfs:label "sultan mahmud badaruddin II" .
+	Ban:ProvinsiSumateraSelatan Ban:MemilikiBandara Ban:sultanmahmudbadaruddinII .
+		
+	Ban:sultanmahmudbadaruddinII Ban:jenis Ban:sultanmahmudbadaruddinII_2012 .
+	Ban:sultanmahmudbadaruddinII_2012 Ban:PesawatBerangkat 11151  .
+	Ban:sultanmahmudbadaruddinII_2012 Ban:PenumpangBerangkat 1513131  .
+			
+	Ban:sultanmahmudbadaruddinII a Ban:Bandara .
+	Ban:sultanmahmudbadaruddinII rdfs:label "sultan mahmud badaruddin II" .
+	Ban:ProvinsiSumateraSelatan Ban:MemilikiBandara Ban:sultanmahmudbadaruddinII .
+		
+	Ban:sultanmahmudbadaruddinII Ban:jenis Ban:sultanmahmudbadaruddinII_2012 .
+	Ban:sultanmahmudbadaruddinII_2012 Ban:PesawatDatang 11138  .
+	Ban:sultanmahmudbadaruddinII_2012 Ban:PenumpangDatang 1518630  .
+
+		
+	Ban:radinintenII a Ban:Bandara .
+	Ban:radinintenII rdfs:label "radin inten II" .
+	Ban:ProvinsiLampung Ban:MemilikiBandara Ban:radinintenII .
+		
+	Ban:radinintenII Ban:jenis Ban:radinintenII_2012 .
+	Ban:radinintenII_2012 Ban:PesawatBerangkat 1002520  .
+	Ban:radinintenII_2012 Ban:PenumpangBerangkat 5534  .
+			
+	Ban:radinintenII a Ban:Bandara .
+	Ban:radinintenII rdfs:label "radin inten II" .
+	Ban:ProvinsiLampung Ban:MemilikiBandara Ban:radinintenII .
+		
+	Ban:radinintenII Ban:jenis Ban:radinintenII_2012 .
+	Ban:radinintenII_2012 Ban:PesawatDatang 538369  .
+	Ban:radinintenII_2012 Ban:PenumpangDatang 5507  .
+
+		
+	Ban:depatiamir a Ban:Bandara .
+	Ban:depatiamir rdfs:label "depati amir" .
+	Ban:ProvinsiKepulauanBangkaBelitung Ban:MemilikiBandara Ban:depatiamir .
+		
+	Ban:depatiamir Ban:jenis Ban:depatiamir_2012 .
+	Ban:depatiamir_2012 Ban:PesawatBerangkat 5427  .
+	Ban:depatiamir_2012 Ban:PenumpangBerangkat 665524  .
+			
+	Ban:depatiamir a Ban:Bandara .
+	Ban:depatiamir rdfs:label "depati amir" .
+	Ban:ProvinsiKepulauanBangkaBelitung Ban:MemilikiBandara Ban:depatiamir .
+		
+	Ban:depatiamir Ban:jenis Ban:depatiamir_2012 .
+	Ban:depatiamir_2012 Ban:PesawatDatang 5429  .
+	Ban:depatiamir_2012 Ban:PenumpangDatang 676895  .
+
+		
+	Ban:HASHanandjoeddin a Ban:Bandara .
+	Ban:HASHanandjoeddin rdfs:label "HAS Hanandjoeddin" .
+	Ban:ProvinsiKepulauanBangkaBelitung Ban:MemilikiBandara Ban:HASHanandjoeddin .
+		
+	Ban:HASHanandjoeddin Ban:jenis Ban:HASHanandjoeddin_2012 .
+	Ban:HASHanandjoeddin_2012 Ban:PesawatBerangkat 2106  .
+	Ban:HASHanandjoeddin_2012 Ban:PenumpangBerangkat 20149  .
+			
+	Ban:HASHanandjoeddin a Ban:Bandara .
+	Ban:HASHanandjoeddin rdfs:label "HAS Hanandjoeddin" .
+	Ban:ProvinsiKepulauanBangkaBelitung Ban:MemilikiBandara Ban:HASHanandjoeddin .
+		
+	Ban:HASHanandjoeddin Ban:jenis Ban:HASHanandjoeddin_2012 .
+	Ban:HASHanandjoeddin_2012 Ban:PesawatDatang 2106  .
+	Ban:HASHanandjoeddin_2012 Ban:PenumpangDatang 204871  .
+
+		
+	Ban:Soekarnohatta a Ban:Bandara .
+	Ban:Soekarnohatta rdfs:label "Soekarno hatta" .
+	Ban:ProvinsiJakarta Ban:MemilikiBandara Ban:Soekarnohatta .
+		
+	Ban:Soekarnohatta Ban:jenis Ban:Soekarnohatta_2012 .
+	Ban:Soekarnohatta_2012 Ban:PesawatBerangkat 96743  .
+	Ban:Soekarnohatta_2012 Ban:PenumpangBerangkat 14651927  .
+			
+	Ban:Soekarnohatta a Ban:Bandara .
+	Ban:Soekarnohatta rdfs:label "Soekarno hatta" .
+	Ban:ProvinsiJakarta Ban:MemilikiBandara Ban:Soekarnohatta .
+		
+	Ban:Soekarnohatta Ban:jenis Ban:Soekarnohatta_2012 .
+	Ban:Soekarnohatta_2012 Ban:PesawatDatang 95315  .
+	Ban:Soekarnohatta_2012 Ban:PenumpangDatang 12988593  .
+
+		
+	Ban:HalimPerdanakusuma a Ban:Bandara .
+	Ban:HalimPerdanakusuma rdfs:label "Halim Perdanakusuma" .
+	Ban:ProvinsiJakarta Ban:MemilikiBandara Ban:HalimPerdanakusuma .
+		
+	Ban:HalimPerdanakusuma Ban:jenis Ban:HalimPerdanakusuma_2012 .
+	Ban:HalimPerdanakusuma_2012 Ban:PesawatBerangkat 1981  .
+	Ban:HalimPerdanakusuma_2012 Ban:PenumpangBerangkat 11929  .
+			
+	Ban:HalimPerdanakusuma a Ban:Bandara .
+	Ban:HalimPerdanakusuma rdfs:label "Halim Perdanakusuma" .
+	Ban:ProvinsiJakarta Ban:MemilikiBandara Ban:HalimPerdanakusuma .
+		
+	Ban:HalimPerdanakusuma Ban:jenis Ban:HalimPerdanakusuma_2012 .
+	Ban:HalimPerdanakusuma_2012 Ban:PesawatDatang 215  .
+	Ban:HalimPerdanakusuma_2012 Ban:PenumpangDatang 13353  .
+
+		
+	Ban:huseinsastranegara a Ban:Bandara .
+	Ban:huseinsastranegara rdfs:label "husein sastranegara" .
+	Ban:ProvinsiJawaBarat Ban:MemilikiBandara Ban:huseinsastranegara .
+		
+	Ban:huseinsastranegara Ban:jenis Ban:huseinsastranegara_2012 .
+	Ban:huseinsastranegara_2012 Ban:PesawatBerangkat 505  .
+	Ban:huseinsastranegara_2012 Ban:PenumpangBerangkat 638973  .
+			
+	Ban:huseinsastranegara a Ban:Bandara .
+	Ban:huseinsastranegara rdfs:label "husein sastranegara" .
+	Ban:ProvinsiJawaBarat Ban:MemilikiBandara Ban:huseinsastranegara .
+		
+	Ban:huseinsastranegara Ban:jenis Ban:huseinsastranegara_2012 .
+	Ban:huseinsastranegara_2012 Ban:PesawatDatang 5099  .
+	Ban:huseinsastranegara_2012 Ban:PenumpangDatang 634439  .
+
+		
+	Ban:adisutjipto a Ban:Bandara .
+	Ban:adisutjipto rdfs:label "adi sutjipto" .
+	Ban:ProvinsiYogyakarta Ban:MemilikiBandara Ban:adisutjipto .
+		
+	Ban:adisutjipto Ban:jenis Ban:adisutjipto_2012 .
+	Ban:adisutjipto_2012 Ban:PesawatBerangkat 207  .
+	Ban:adisutjipto_2012 Ban:PenumpangBerangkat 2709467  .
+			
+	Ban:adisutjipto a Ban:Bandara .
+	Ban:adisutjipto rdfs:label "adi sutjipto" .
+	Ban:ProvinsiYogyakarta Ban:MemilikiBandara Ban:adisutjipto .
+		
+	Ban:adisutjipto Ban:jenis Ban:adisutjipto_2012 .
+	Ban:adisutjipto_2012 Ban:PesawatDatang 20707  .
+	Ban:adisutjipto_2012 Ban:PenumpangDatang 2657580  .
+
+		
+	Ban:achmadyani a Ban:Bandara .
+	Ban:achmadyani rdfs:label "achmad yani" .
+	Ban:ProvinsiJawaTengah Ban:MemilikiBandara Ban:achmadyani .
+		
+	Ban:achmadyani Ban:jenis Ban:achmadyani_2012 .
+	Ban:achmadyani_2012 Ban:PesawatBerangkat 12724  .
+	Ban:achmadyani_2012 Ban:PenumpangBerangkat 1257008  .
+			
+	Ban:achmadyani a Ban:Bandara .
+	Ban:achmadyani rdfs:label "achmad yani" .
+	Ban:ProvinsiJawaTengah Ban:MemilikiBandara Ban:achmadyani .
+		
+	Ban:achmadyani Ban:jenis Ban:achmadyani_2012 .
+	Ban:achmadyani_2012 Ban:PesawatDatang 12737  .
+	Ban:achmadyani_2012 Ban:PenumpangDatang 1245225  .
+
+		
+	Ban:adisumarmo a Ban:Bandara .
+	Ban:adisumarmo rdfs:label "adi sumarmo" .
+	Ban:ProvinsiJawaTengah Ban:MemilikiBandara Ban:adisumarmo .
+		
+	Ban:adisumarmo Ban:jenis Ban:adisumarmo_2012 .
+	Ban:adisumarmo_2012 Ban:PesawatBerangkat 6079  .
+	Ban:adisumarmo_2012 Ban:PenumpangBerangkat 768029  .
+			
+	Ban:adisumarmo a Ban:Bandara .
+	Ban:adisumarmo rdfs:label "adi sumarmo" .
+	Ban:ProvinsiJawaTengah Ban:MemilikiBandara Ban:adisumarmo .
+		
+	Ban:adisumarmo Ban:jenis Ban:adisumarmo_2012 .
+	Ban:adisumarmo_2012 Ban:PesawatDatang 6068  .
+	Ban:adisumarmo_2012 Ban:PenumpangDatang 743199  .
+
+		
+	Ban:juanda a Ban:Bandara .
+	Ban:juanda rdfs:label "juanda" .
+	Ban:ProvinsiJawaTimur Ban:MemilikiBandara Ban:juanda .
+		
+	Ban:juanda Ban:jenis Ban:juanda_2012 .
+	Ban:juanda_2012 Ban:PesawatBerangkat 67384  .
+	Ban:juanda_2012 Ban:PenumpangBerangkat 8827267  .
+			
+	Ban:juanda a Ban:Bandara .
+	Ban:juanda rdfs:label "juanda" .
+	Ban:ProvinsiJawaTimur Ban:MemilikiBandara Ban:juanda .
+		
+	Ban:juanda Ban:jenis Ban:juanda_2012 .
+	Ban:juanda_2012 Ban:PesawatDatang 67349  .
+	Ban:juanda_2012 Ban:PenumpangDatang 8036800  .
+
+		
+	Ban:blimbingsari a Ban:Bandara .
+	Ban:blimbingsari rdfs:label "blimbingsari" .
+	Ban:ProvinsiJawaTimur Ban:MemilikiBandara Ban:blimbingsari .
+		
+	Ban:blimbingsari Ban:jenis Ban:blimbingsari_2012 .
+	Ban:blimbingsari_2012 Ban:PesawatBerangkat 2428  .
+	Ban:blimbingsari_2012 Ban:PenumpangBerangkat 1815  .
+			
+	Ban:blimbingsari a Ban:Bandara .
+	Ban:blimbingsari rdfs:label "blimbingsari" .
+	Ban:ProvinsiJawaTimur Ban:MemilikiBandara Ban:blimbingsari .
+		
+	Ban:blimbingsari Ban:jenis Ban:blimbingsari_2012 .
+	Ban:blimbingsari_2012 Ban:PesawatDatang 2427  .
+	Ban:blimbingsari_2012 Ban:PenumpangDatang 20382  .
+
+		
+	Ban:ngurahrai a Ban:Bandara .
+	Ban:ngurahrai rdfs:label "ngurah rai" .
+	Ban:ProvinsiBali Ban:MemilikiBandara Ban:ngurahrai .
+		
+	Ban:ngurahrai Ban:jenis Ban:ngurahrai_2012 .
+	Ban:ngurahrai_2012 Ban:PesawatBerangkat 5598  .
+	Ban:ngurahrai_2012 Ban:PenumpangBerangkat 7023091  .
+			
+	Ban:ngurahrai a Ban:Bandara .
+	Ban:ngurahrai rdfs:label "ngurah rai" .
+	Ban:ProvinsiBali Ban:MemilikiBandara Ban:ngurahrai .
+		
+	Ban:ngurahrai Ban:jenis Ban:ngurahrai_2012 .
+	Ban:ngurahrai_2012 Ban:PesawatDatang 56  .
+	Ban:ngurahrai_2012 Ban:PenumpangDatang 6799003  .
+
+		
+	Ban:selaparang a Ban:Bandara .
+	Ban:selaparang rdfs:label "selaparang" .
+	Ban:ProvinsiNusaTenggaraBarat Ban:MemilikiBandara Ban:selaparang .
+		
+	Ban:selaparang Ban:jenis Ban:selaparang_2012 .
+	Ban:selaparang_2012 Ban:PesawatBerangkat 11952  .
+	Ban:selaparang_2012 Ban:PenumpangBerangkat 818034  .
+			
+	Ban:selaparang a Ban:Bandara .
+	Ban:selaparang rdfs:label "selaparang" .
+	Ban:ProvinsiNusaTenggaraBarat Ban:MemilikiBandara Ban:selaparang .
+		
+	Ban:selaparang Ban:jenis Ban:selaparang_2012 .
+	Ban:selaparang_2012 Ban:PesawatDatang 11982  .
+	Ban:selaparang_2012 Ban:PenumpangDatang 857705  .
+
+		
+	Ban:bima a Ban:Bandara .
+	Ban:bima rdfs:label "bima" .
+	Ban:ProvinsiNusaTenggaraBarat Ban:MemilikiBandara Ban:bima .
+		
+	Ban:bima Ban:jenis Ban:bima_2012 .
+	Ban:bima_2012 Ban:PesawatBerangkat 235  .
+	Ban:bima_2012 Ban:PenumpangBerangkat 1011  .
+			
+	Ban:bima a Ban:Bandara .
+	Ban:bima rdfs:label "bima" .
+	Ban:ProvinsiNusaTenggaraBarat Ban:MemilikiBandara Ban:bima .
+		
+	Ban:bima Ban:jenis Ban:bima_2012 .
+	Ban:bima_2012 Ban:PesawatDatang 236  .
+	Ban:bima_2012 Ban:PenumpangDatang 11257  .
+
+		
+	Ban:eltari a Ban:Bandara .
+	Ban:eltari rdfs:label "el tari" .
+	Ban:ProvinsiNusaTenggaraTimur Ban:MemilikiBandara Ban:eltari .
+		
+	Ban:eltari Ban:jenis Ban:eltari_2012 .
+	Ban:eltari_2012 Ban:PesawatBerangkat 10176  .
+	Ban:eltari_2012 Ban:PenumpangBerangkat 66322  .
+			
+	Ban:eltari a Ban:Bandara .
+	Ban:eltari rdfs:label "el tari" .
+	Ban:ProvinsiNusaTenggaraTimur Ban:MemilikiBandara Ban:eltari .
+		
+	Ban:eltari Ban:jenis Ban:eltari_2012 .
+	Ban:eltari_2012 Ban:PesawatDatang 10112  .
+	Ban:eltari_2012 Ban:PenumpangDatang 685602  .
+
+		
+	Ban:Syamsudinnoor a Ban:Bandara .
+	Ban:Syamsudinnoor rdfs:label "Syamsudin noor" .
+	Ban:ProvinsiKalimantanSelatan Ban:MemilikiBandara Ban:Syamsudinnoor .
+		
+	Ban:Syamsudinnoor Ban:jenis Ban:Syamsudinnoor_2012 .
+	Ban:Syamsudinnoor_2012 Ban:PesawatBerangkat 16005  .
+	Ban:Syamsudinnoor_2012 Ban:PenumpangBerangkat 1926811  .
+			
+	Ban:Syamsudinnoor a Ban:Bandara .
+	Ban:Syamsudinnoor rdfs:label "Syamsudin noor" .
+	Ban:ProvinsiKalimantanSelatan Ban:MemilikiBandara Ban:Syamsudinnoor .
+		
+	Ban:Syamsudinnoor Ban:jenis Ban:Syamsudinnoor_2012 .
+	Ban:Syamsudinnoor_2012 Ban:PesawatDatang 16008  .
+	Ban:Syamsudinnoor_2012 Ban:PenumpangDatang 1929716  .
+
+		
+	Ban:tjilikriwut a Ban:Bandara .
+	Ban:tjilikriwut rdfs:label "tjilik riwut" .
+	Ban:ProvinsiKalimantanTengah Ban:MemilikiBandara Ban:tjilikriwut .
+		
+	Ban:tjilikriwut Ban:jenis Ban:tjilikriwut_2012 .
+	Ban:tjilikriwut_2012 Ban:PesawatBerangkat 5485  .
+	Ban:tjilikriwut_2012 Ban:PenumpangBerangkat 331699  .
+			
+	Ban:tjilikriwut a Ban:Bandara .
+	Ban:tjilikriwut rdfs:label "tjilik riwut" .
+	Ban:ProvinsiKalimantanTengah Ban:MemilikiBandara Ban:tjilikriwut .
+		
+	Ban:tjilikriwut Ban:jenis Ban:tjilikriwut_2012 .
+	Ban:tjilikriwut_2012 Ban:PesawatDatang 5484  .
+	Ban:tjilikriwut_2012 Ban:PenumpangDatang 327249  .
+
+		
+	Ban:rahadioesman a Ban:Bandara .
+	Ban:rahadioesman rdfs:label "rahadi oesman" .
+	Ban:ProvinsiKalimantanBarat Ban:MemilikiBandara Ban:rahadioesman .
+		
+	Ban:rahadioesman Ban:jenis Ban:rahadioesman_2012 .
+	Ban:rahadioesman_2012 Ban:PesawatBerangkat 1706  .
+	Ban:rahadioesman_2012 Ban:PenumpangBerangkat 6554  .
+			
+	Ban:rahadioesman a Ban:Bandara .
+	Ban:rahadioesman rdfs:label "rahadi oesman" .
+	Ban:ProvinsiKalimantanBarat Ban:MemilikiBandara Ban:rahadioesman .
+		
+	Ban:rahadioesman Ban:jenis Ban:rahadioesman_2012 .
+	Ban:rahadioesman_2012 Ban:PesawatDatang 1712  .
+	Ban:rahadioesman_2012 Ban:PenumpangDatang 67592  .
+
+		
+	Ban:Supadio a Ban:Bandara .
+	Ban:Supadio rdfs:label "Supadio" .
+	Ban:ProvinsiKalimantanBarat Ban:MemilikiBandara Ban:Supadio .
+		
+	Ban:Supadio Ban:jenis Ban:Supadio_2012 .
+	Ban:Supadio_2012 Ban:PesawatBerangkat 5275  .
+	Ban:Supadio_2012 Ban:PenumpangBerangkat 560988  .
+			
+	Ban:Supadio a Ban:Bandara .
+	Ban:Supadio rdfs:label "Supadio" .
+	Ban:ProvinsiKalimantanBarat Ban:MemilikiBandara Ban:Supadio .
+		
+	Ban:Supadio Ban:jenis Ban:Supadio_2012 .
+	Ban:Supadio_2012 Ban:PesawatDatang 5303  .
+	Ban:Supadio_2012 Ban:PenumpangDatang 560906  .
+
+		
+	Ban:juwata a Ban:Bandara .
+	Ban:juwata rdfs:label "juwata" .
+	Ban:ProvinsiKalimantanUtara Ban:MemilikiBandara Ban:juwata .
+		
+	Ban:juwata Ban:jenis Ban:juwata_2012 .
+	Ban:juwata_2012 Ban:PesawatBerangkat 6557  .
+	Ban:juwata_2012 Ban:PenumpangBerangkat 446879  .
+			
+	Ban:juwata a Ban:Bandara .
+	Ban:juwata rdfs:label "juwata" .
+	Ban:ProvinsiKalimantanUtara Ban:MemilikiBandara Ban:juwata .
+		
+	Ban:juwata Ban:jenis Ban:juwata_2012 .
+	Ban:juwata_2012 Ban:PesawatDatang 6557  .
+	Ban:juwata_2012 Ban:PenumpangDatang 453655  .
+
+		
+	Ban:Termindung a Ban:Bandara .
+	Ban:Termindung rdfs:label "Termindung" .
+	Ban:ProvinsiKalimantanTimur Ban:MemilikiBandara Ban:Termindung .
+		
+	Ban:Termindung Ban:jenis Ban:Termindung_2012 .
+	Ban:Termindung_2012 Ban:PesawatBerangkat 3721  .
+	Ban:Termindung_2012 Ban:PenumpangBerangkat 65717  .
+			
+	Ban:Termindung a Ban:Bandara .
+	Ban:Termindung rdfs:label "Termindung" .
+	Ban:ProvinsiKalimantanTimur Ban:MemilikiBandara Ban:Termindung .
+		
+	Ban:Termindung Ban:jenis Ban:Termindung_2012 .
+	Ban:Termindung_2012 Ban:PesawatDatang 3718  .
+	Ban:Termindung_2012 Ban:PenumpangDatang 5532  .
+
+		
+	Ban:Mutiara a Ban:Bandara .
+	Ban:Mutiara rdfs:label "Mutiara" .
+	Ban:ProvinsiSulawesiTengah Ban:MemilikiBandara Ban:Mutiara .
+		
+	Ban:Mutiara Ban:jenis Ban:Mutiara_2012 .
+	Ban:Mutiara_2012 Ban:PesawatBerangkat 3953  .
+	Ban:Mutiara_2012 Ban:PenumpangBerangkat 437781  .
+			
+	Ban:Mutiara a Ban:Bandara .
+	Ban:Mutiara rdfs:label "Mutiara" .
+	Ban:ProvinsiSulawesiTengah Ban:MemilikiBandara Ban:Mutiara .
+		
+	Ban:Mutiara Ban:jenis Ban:Mutiara_2012 .
+	Ban:Mutiara_2012 Ban:PesawatDatang 3953  .
+	Ban:Mutiara_2012 Ban:PenumpangDatang 444179  .
+
+		
+	Ban:sultanhasanuddin a Ban:Bandara .
+	Ban:sultanhasanuddin rdfs:label "sultan hasanuddin" .
+	Ban:ProvinsiSulawesiSelatan Ban:MemilikiBandara Ban:sultanhasanuddin .
+		
+	Ban:sultanhasanuddin Ban:jenis Ban:sultanhasanuddin_2012 .
+	Ban:sultanhasanuddin_2012 Ban:PesawatBerangkat 47347  .
+	Ban:sultanhasanuddin_2012 Ban:PenumpangBerangkat 3842929  .
+			
+	Ban:sultanhasanuddin a Ban:Bandara .
+	Ban:sultanhasanuddin rdfs:label "sultan hasanuddin" .
+	Ban:ProvinsiSulawesiSelatan Ban:MemilikiBandara Ban:sultanhasanuddin .
+		
+	Ban:sultanhasanuddin Ban:jenis Ban:sultanhasanuddin_2012 .
+	Ban:sultanhasanuddin_2012 Ban:PesawatDatang 47346  .
+	Ban:sultanhasanuddin_2012 Ban:PenumpangDatang 3544525  .
+
+		
+	Ban:Utarom a Ban:Bandara .
+	Ban:Utarom rdfs:label "Utarom" .
+	Ban:ProvinsiPapuaBarat Ban:MemilikiBandara Ban:Utarom .
+		
+	Ban:Utarom Ban:jenis Ban:Utarom_2012 .
+	Ban:Utarom_2012 Ban:PesawatBerangkat 48  .
+	Ban:Utarom_2012 Ban:PenumpangBerangkat 1233  .
+			
+	Ban:Utarom a Ban:Bandara .
+	Ban:Utarom rdfs:label "Utarom" .
+	Ban:ProvinsiPapuaBarat Ban:MemilikiBandara Ban:Utarom .
+		
+	Ban:Utarom Ban:jenis Ban:Utarom_2012 .
+	Ban:Utarom_2012 Ban:PesawatDatang 55  .
+	Ban:Utarom_2012 Ban:PenumpangDatang 1148  .
+
+		
+	Ban:rendani a Ban:Bandara .
+	Ban:rendani rdfs:label "rendani" .
+	Ban:ProvinsiPapuaBarat Ban:MemilikiBandara Ban:rendani .
+		
+	Ban:rendani Ban:jenis Ban:rendani_2012 .
+	Ban:rendani_2012 Ban:PesawatBerangkat 3941  .
+	Ban:rendani_2012 Ban:PenumpangBerangkat 179754  .
+			
+	Ban:rendani a Ban:Bandara .
+	Ban:rendani rdfs:label "rendani" .
+	Ban:ProvinsiPapuaBarat Ban:MemilikiBandara Ban:rendani .
+		
+	Ban:rendani Ban:jenis Ban:rendani_2012 .
+	Ban:rendani_2012 Ban:PesawatDatang 394  .
+	Ban:rendani_2012 Ban:PenumpangDatang 200262  .
+
+		
+	Ban:franskaisiepo a Ban:Bandara .
+	Ban:franskaisiepo rdfs:label "frans kaisiepo" .
+	Ban:ProvinsiPapua Ban:MemilikiBandara Ban:franskaisiepo .
+		
+	Ban:franskaisiepo Ban:jenis Ban:franskaisiepo_2012 .
+	Ban:franskaisiepo_2012 Ban:PesawatBerangkat 5298  .
+	Ban:franskaisiepo_2012 Ban:PenumpangBerangkat 138407  .
+			
+	Ban:franskaisiepo a Ban:Bandara .
+	Ban:franskaisiepo rdfs:label "frans kaisiepo" .
+	Ban:ProvinsiPapua Ban:MemilikiBandara Ban:franskaisiepo .
+		
+	Ban:franskaisiepo Ban:jenis Ban:franskaisiepo_2012 .
+	Ban:franskaisiepo_2012 Ban:PesawatDatang 5308  .
+	Ban:franskaisiepo_2012 Ban:PenumpangDatang 146845  .
+
+		
+	Ban:mopah a Ban:Bandara .
+	Ban:mopah rdfs:label "mopah" .
+	Ban:ProvinsiPapua Ban:MemilikiBandara Ban:mopah .
+		
+	Ban:mopah Ban:jenis Ban:mopah_2012 .
+	Ban:mopah_2012 Ban:PesawatBerangkat 2852  .
+	Ban:mopah_2012 Ban:PenumpangBerangkat 15558  .
+			
+	Ban:mopah a Ban:Bandara .
+	Ban:mopah rdfs:label "mopah" .
+	Ban:ProvinsiPapua Ban:MemilikiBandara Ban:mopah .
+		
+	Ban:mopah Ban:jenis Ban:mopah_2012 .
+	Ban:mopah_2012 Ban:PesawatDatang 2843  .
+	Ban:mopah_2012 Ban:PenumpangDatang 150905  .
+
+		
+	Ban:AekGodang a Ban:Bandara .
+	Ban:AekGodang rdfs:label "Aek Godang" .
+	Ban:ProvinsiSumateraUtara Ban:MemilikiBandara Ban:AekGodang .
+		
+	Ban:AekGodang Ban:jenis Ban:AekGodang_2012 .
+	Ban:AekGodang_2012 Ban:PesawatBerangkat 695  .
+	Ban:AekGodang_2012 Ban:PenumpangBerangkat 5066  .
+			
+	Ban:AekGodang a Ban:Bandara .
+	Ban:AekGodang rdfs:label "Aek Godang" .
+	Ban:ProvinsiSumateraUtara Ban:MemilikiBandara Ban:AekGodang .
+		
+	Ban:AekGodang Ban:jenis Ban:AekGodang_2012 .
+	Ban:AekGodang_2012 Ban:PesawatDatang 695  .
+	Ban:AekGodang_2012 Ban:PenumpangDatang 545  .
+
+		
+	Ban:Mali a Ban:Bandara .
+	Ban:Mali rdfs:label "Mali" .
+	Ban:ProvinsiNusaTenggaraTimur Ban:MemilikiBandara Ban:Mali .
+		
+	Ban:Mali Ban:jenis Ban:Mali_2012 .
+	Ban:Mali_2012 Ban:PesawatBerangkat 328  .
+	Ban:Mali_2012 Ban:PenumpangBerangkat 15318  .
+			
+	Ban:Mali a Ban:Bandara .
+	Ban:Mali rdfs:label "Mali" .
+	Ban:ProvinsiNusaTenggaraTimur Ban:MemilikiBandara Ban:Mali .
+		
+	Ban:Mali Ban:jenis Ban:Mali_2012 .
+	Ban:Mali_2012 Ban:PesawatDatang 328  .
+	Ban:Mali_2012 Ban:PenumpangDatang 14958  .
+
+		
+	Ban:SamRatulangi a Ban:Bandara .
+	Ban:SamRatulangi rdfs:label "Sam Ratulangi" .
+	Ban:ProvinsiSulawesiUtara Ban:MemilikiBandara Ban:SamRatulangi .
+		
+	Ban:SamRatulangi Ban:jenis Ban:SamRatulangi_2012 .
+	Ban:SamRatulangi_2012 Ban:PesawatBerangkat 9909  .
+	Ban:SamRatulangi_2012 Ban:PenumpangBerangkat 1113662  .
+			
+	Ban:SamRatulangi a Ban:Bandara .
+	Ban:SamRatulangi rdfs:label "Sam Ratulangi" .
+	Ban:ProvinsiSulawesiUtara Ban:MemilikiBandara Ban:SamRatulangi .
+		
+	Ban:SamRatulangi Ban:jenis Ban:SamRatulangi_2012 .
+	Ban:SamRatulangi_2012 Ban:PesawatDatang 9864  .
+	Ban:SamRatulangi_2012 Ban:PenumpangDatang 1111117  .
+
+		
+	Ban:CutNyakDien a Ban:Bandara .
+	Ban:CutNyakDien rdfs:label "Cut Nyak Dien" .
+	Ban:ProvinsiAceh Ban:MemilikiBandara Ban:CutNyakDien .
+		
+	Ban:CutNyakDien Ban:jenis Ban:CutNyakDien_2012 .
+	Ban:CutNyakDien_2012 Ban:PesawatBerangkat 922  .
+	Ban:CutNyakDien_2012 Ban:PenumpangBerangkat 14399  .
+			
+	Ban:CutNyakDien a Ban:Bandara .
+	Ban:CutNyakDien rdfs:label "Cut Nyak Dien" .
+	Ban:ProvinsiAceh Ban:MemilikiBandara Ban:CutNyakDien .
+		
+	Ban:CutNyakDien Ban:jenis Ban:CutNyakDien_2012 .
+	Ban:CutNyakDien_2012 Ban:PesawatDatang 920  .
+	Ban:CutNyakDien_2012 Ban:PenumpangDatang 16635  .
+
+		
+	Ban:PATTIMURA a Ban:Bandara .
+	Ban:PATTIMURA rdfs:label "PATTIMURA" .
+	Ban:ProvinsiMaluku Ban:MemilikiBandara Ban:PATTIMURA .
+		
+	Ban:PATTIMURA Ban:jenis Ban:PATTIMURA_2012 .
+	Ban:PATTIMURA_2012 Ban:PesawatBerangkat 6853  .
+	Ban:PATTIMURA_2012 Ban:PenumpangBerangkat 525173  .
+			
+	Ban:PATTIMURA a Ban:Bandara .
+	Ban:PATTIMURA rdfs:label "PATTIMURA" .
+	Ban:ProvinsiMaluku Ban:MemilikiBandara Ban:PATTIMURA .
+		
+	Ban:PATTIMURA Ban:jenis Ban:PATTIMURA_2012 .
+	Ban:PATTIMURA_2012 Ban:PesawatDatang 6045  .
+	Ban:PATTIMURA_2012 Ban:PenumpangDatang 418542  .
+
+		
+	Ban:LombokPraya a Ban:Bandara .
+	Ban:LombokPraya rdfs:label "Lombok Praya" .
+	Ban:ProvinsiNusaTenggaraTimur Ban:MemilikiBandara Ban:LombokPraya .
+		
+	Ban:LombokPraya Ban:jenis Ban:LombokPraya_2012 .
+	Ban:LombokPraya_2012 Ban:PesawatBerangkat 13461  .
+	Ban:LombokPraya_2012 Ban:PenumpangBerangkat 1068483  .
+			
+	Ban:LombokPraya a Ban:Bandara .
+	Ban:LombokPraya rdfs:label "Lombok Praya" .
+	Ban:ProvinsiNusaTenggaraTimur Ban:MemilikiBandara Ban:LombokPraya .
+		
+	Ban:LombokPraya Ban:jenis Ban:LombokPraya_2012 .
+	Ban:LombokPraya_2012 Ban:PesawatDatang 13479  .
+	Ban:LombokPraya_2012 Ban:PenumpangDatang 1055134  .
+
+		
+	Ban:SULTANBABULLAH a Ban:Bandara .
+	Ban:SULTANBABULLAH rdfs:label "SULTAN BABULLAH" .
+	Ban:ProvinsiMalukuUtara Ban:MemilikiBandara Ban:SULTANBABULLAH .
+		
+	Ban:SULTANBABULLAH Ban:jenis Ban:SULTANBABULLAH_2012 .
+	Ban:SULTANBABULLAH_2012 Ban:PesawatBerangkat 1158  .
+	Ban:SULTANBABULLAH_2012 Ban:PenumpangBerangkat 6261  .
+			
+	Ban:SULTANBABULLAH a Ban:Bandara .
+	Ban:SULTANBABULLAH rdfs:label "SULTAN BABULLAH" .
+	Ban:ProvinsiMalukuUtara Ban:MemilikiBandara Ban:SULTANBABULLAH .
+		
+	Ban:SULTANBABULLAH Ban:jenis Ban:SULTANBABULLAH_2012 .
+	Ban:SULTANBABULLAH_2012 Ban:PesawatDatang 1158  .
+	Ban:SULTANBABULLAH_2012 Ban:PenumpangDatang 69039  .
+
+		
+	Ban:KualaNamu a Ban:Bandara .
+	Ban:KualaNamu rdfs:label "Kuala Namu" .
+	Ban:ProvinsiSumateraUtara Ban:MemilikiBandara Ban:KualaNamu .
+		
+	Ban:KualaNamu Ban:jenis Ban:KualaNamu_2012 .
+	Ban:KualaNamu_2012 Ban:PesawatBerangkat 15141  .
+	Ban:KualaNamu_2012 Ban:PenumpangBerangkat 1805851  .
+			
+	Ban:KualaNamu a Ban:Bandara .
+	Ban:KualaNamu rdfs:label "Kuala Namu" .
+	Ban:ProvinsiSumateraUtara Ban:MemilikiBandara Ban:KualaNamu .
+		
+	Ban:KualaNamu Ban:jenis Ban:KualaNamu_2012 .
+	Ban:KualaNamu_2012 Ban:PesawatDatang 15015  .
+	Ban:KualaNamu_2012 Ban:PenumpangDatang 1735456  .
+
+		
+	Ban:RAJAHAJIFISABILILLAH a Ban:Bandara .
+	Ban:RAJAHAJIFISABILILLAH rdfs:label "RAJA HAJI FISABILILLAH" .
+	Ban:ProvinsiRiau Ban:MemilikiBandara Ban:RAJAHAJIFISABILILLAH .
+		
+	Ban:RAJAHAJIFISABILILLAH Ban:jenis Ban:RAJAHAJIFISABILILLAH_2012 .
+	Ban:RAJAHAJIFISABILILLAH_2012 Ban:PesawatBerangkat 798  .
+	Ban:RAJAHAJIFISABILILLAH_2012 Ban:PenumpangBerangkat 60152  .
+			
+	Ban:RAJAHAJIFISABILILLAH a Ban:Bandara .
+	Ban:RAJAHAJIFISABILILLAH rdfs:label "RAJA HAJI FISABILILLAH" .
+	Ban:ProvinsiRiau Ban:MemilikiBandara Ban:RAJAHAJIFISABILILLAH .
+		
+	Ban:RAJAHAJIFISABILILLAH Ban:jenis Ban:RAJAHAJIFISABILILLAH_2012 .
+	Ban:RAJAHAJIFISABILILLAH_2012 Ban:PesawatDatang 805  .
+	Ban:RAJAHAJIFISABILILLAH_2012 Ban:PenumpangDatang 5812  .
+
+		
+	Ban:HangAcehim a Ban:Bandara .
+	Ban:HangAcehim rdfs:label "Hang Acehim" .
+	Ban:ProvinsiRiau Ban:MemilikiBandara Ban:HangAcehim .
+		
+	Ban:HangAcehim Ban:jenis Ban:HangAcehim_2012 .
+	Ban:HangAcehim_2012 Ban:PesawatBerangkat 14339  .
+	Ban:HangAcehim_2012 Ban:PenumpangBerangkat 1715967  .
+			
+	Ban:HangAcehim a Ban:Bandara .
+	Ban:HangAcehim rdfs:label "Hang Acehim" .
+	Ban:ProvinsiRiau Ban:MemilikiBandara Ban:HangAcehim .
+		
+	Ban:HangAcehim Ban:jenis Ban:HangAcehim_2012 .
+	Ban:HangAcehim_2012 Ban:PesawatDatang 15625  .
+	Ban:HangAcehim_2012 Ban:PenumpangDatang 1883993  .
+
+		
+	Ban:SULTANISKANDARMUDA a Ban:Bandara .
+	Ban:SULTANISKANDARMUDA rdfs:label "SULTAN ISKANDAR MUDA" .
+	Ban:ProvinsiAceh Ban:MemilikiBandara Ban:SULTANISKANDARMUDA .
+		
+	Ban:SULTANISKANDARMUDA Ban:jenis Ban:SULTANISKANDARMUDA_2012 .
+	Ban:SULTANISKANDARMUDA_2012 Ban:PesawatBerangkat 3601  .
+	Ban:SULTANISKANDARMUDA_2012 Ban:PenumpangBerangkat 357063  .
+			
+	Ban:SULTANISKANDARMUDA a Ban:Bandara .
+	Ban:SULTANISKANDARMUDA rdfs:label "SULTAN ISKANDAR MUDA" .
+	Ban:ProvinsiAceh Ban:MemilikiBandara Ban:SULTANISKANDARMUDA .
+		
+	Ban:SULTANISKANDARMUDA Ban:jenis Ban:SULTANISKANDARMUDA_2012 .
+	Ban:SULTANISKANDARMUDA_2012 Ban:PesawatDatang 3707  .
+	Ban:SULTANISKANDARMUDA_2012 Ban:PenumpangDatang 354227  .
+
+		
+	Ban:SultanThaha a Ban:Bandara .
+	Ban:SultanThaha rdfs:label "Sultan Thaha" .
+	Ban:ProvinsiJambi Ban:MemilikiBandara Ban:SultanThaha .
+		
+	Ban:SultanThaha Ban:jenis Ban:SultanThaha_2012 .
+	Ban:SultanThaha_2012 Ban:PesawatBerangkat 3869  .
+	Ban:SultanThaha_2012 Ban:PenumpangBerangkat 694841  .
+			
+	Ban:SultanThaha a Ban:Bandara .
+	Ban:SultanThaha rdfs:label "Sultan Thaha" .
+	Ban:ProvinsiJambi Ban:MemilikiBandara Ban:SultanThaha .
+		
+	Ban:SultanThaha Ban:jenis Ban:SultanThaha_2012 .
+	Ban:SultanThaha_2012 Ban:PesawatDatang 3771  .
+	Ban:SultanThaha_2012 Ban:PenumpangDatang 585439  .
+
+		
+	Ban:TanjungHarapan a Ban:Bandara .
+	Ban:TanjungHarapan rdfs:label "Tanjung Harapan" .
+	Ban:ProvinsiKalimantanTimur Ban:MemilikiBandara Ban:TanjungHarapan .
+		
+	Ban:TanjungHarapan Ban:jenis Ban:TanjungHarapan_2012 .
+	Ban:TanjungHarapan_2012 Ban:PesawatBerangkat 88  .
+	Ban:TanjungHarapan_2012 Ban:PenumpangBerangkat 804  .
+			
+	Ban:TanjungHarapan a Ban:Bandara .
+	Ban:TanjungHarapan rdfs:label "Tanjung Harapan" .
+	Ban:ProvinsiKalimantanTimur Ban:MemilikiBandara Ban:TanjungHarapan .
+		
+	Ban:TanjungHarapan Ban:jenis Ban:TanjungHarapan_2012 .
+	Ban:TanjungHarapan_2012 Ban:PesawatDatang 88  .
+	Ban:TanjungHarapan_2012 Ban:PenumpangDatang 814  .
+
+		
+	Ban:SULTANAJIMUHAMMADSULAIMANSEPINGGAN a Ban:Bandara .
+	Ban:SULTANAJIMUHAMMADSULAIMANSEPINGGAN rdfs:label "SULTAN AJI MUHAMMAD SULAIMAN SEPINGGAN" .
+	Ban:ProvinsiKalimantanTimur Ban:MemilikiBandara Ban:SULTANAJIMUHAMMADSULAIMANSEPINGGAN .
+		
+	Ban:SULTANAJIMUHAMMADSULAIMANSEPINGGAN Ban:jenis Ban:SULTANAJIMUHAMMADSULAIMANSEPINGGAN_2012 .
+	Ban:SULTANAJIMUHAMMADSULAIMANSEPINGGAN_2012 Ban:PesawatBerangkat 35324  .
+	Ban:SULTANAJIMUHAMMADSULAIMANSEPINGGAN_2012 Ban:PenumpangBerangkat 3058075  .
+			
+	Ban:SULTANAJIMUHAMMADSULAIMANSEPINGGAN a Ban:Bandara .
+	Ban:SULTANAJIMUHAMMADSULAIMANSEPINGGAN rdfs:label "SULTAN AJI MUHAMMAD SULAIMAN SEPINGGAN" .
+	Ban:ProvinsiKalimantanTimur Ban:MemilikiBandara Ban:SULTANAJIMUHAMMADSULAIMANSEPINGGAN .
+		
+	Ban:SULTANAJIMUHAMMADSULAIMANSEPINGGAN Ban:jenis Ban:SULTANAJIMUHAMMADSULAIMANSEPINGGAN_2012 .
+	Ban:SULTANAJIMUHAMMADSULAIMANSEPINGGAN_2012 Ban:PesawatDatang 35489  .
+	Ban:SULTANAJIMUHAMMADSULAIMANSEPINGGAN_2012 Ban:PenumpangDatang 3067720  .
+
+		
+	Ban:SYUKURANAMINUDDINAMIR a Ban:Bandara .
+	Ban:SYUKURANAMINUDDINAMIR rdfs:label "SYUKURAN AMINUDDIN AMIR" .
+	Ban:ProvinsiSulawesiTengah Ban:MemilikiBandara Ban:SYUKURANAMINUDDINAMIR .
+		
+	Ban:SYUKURANAMINUDDINAMIR Ban:jenis Ban:SYUKURANAMINUDDINAMIR_2012 .
+	Ban:SYUKURANAMINUDDINAMIR_2012 Ban:PesawatBerangkat 958  .
+	Ban:SYUKURANAMINUDDINAMIR_2012 Ban:PenumpangBerangkat 64152  .
+			
+	Ban:SYUKURANAMINUDDINAMIR a Ban:Bandara .
+	Ban:SYUKURANAMINUDDINAMIR rdfs:label "SYUKURAN AMINUDDIN AMIR" .
+	Ban:ProvinsiSulawesiTengah Ban:MemilikiBandara Ban:SYUKURANAMINUDDINAMIR .
+		
+	Ban:SYUKURANAMINUDDINAMIR Ban:jenis Ban:SYUKURANAMINUDDINAMIR_2012 .
+	Ban:SYUKURANAMINUDDINAMIR_2012 Ban:PesawatDatang 957  .
+	Ban:SYUKURANAMINUDDINAMIR_2012 Ban:PenumpangDatang 65507  .
+
+		
+	Ban:Soa a Ban:Bandara .
+	Ban:Soa rdfs:label "Soa" .
+	Ban:ProvinsiNusaTenggaraTimur Ban:MemilikiBandara Ban:Soa .
+		
+	Ban:Soa Ban:jenis Ban:Soa_2012 .
+	Ban:Soa_2012 Ban:PesawatBerangkat 418  .
+	Ban:Soa_2012 Ban:PenumpangBerangkat 15693  .
+			
+	Ban:Soa a Ban:Bandara .
+	Ban:Soa rdfs:label "Soa" .
+	Ban:ProvinsiNusaTenggaraTimur Ban:MemilikiBandara Ban:Soa .
+		
+	Ban:Soa Ban:jenis Ban:Soa_2012 .
+	Ban:Soa_2012 Ban:PesawatDatang 418  .
+	Ban:Soa_2012 Ban:PenumpangDatang 16878  .
+
+		
